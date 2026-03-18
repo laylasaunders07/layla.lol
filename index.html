@@ -10,11 +10,16 @@
 	<title>Layla</title>
 </head>
 <body>
-	<script src="https://keepandroidopen.org/banner.js"></script>
+	<script src="https://keepandroidopen.org/banner.js?size=mini"></script>
+    <div class="banner">
+        <p>april 30th is email debt forgiveness day! 
+            <i><a href="https://web.archive.org/web/20220429021541/https://gimletmedia.com/shows/reply-all/posts/edfd">learn more</a></i></p>
+    </div>
     <main>
         <h1>
             Layla's cool site!!1!
         </h1>
+        <p><i><span id="counter">loading</span> hits, last updated: 18th march 2026, <b>still niche</b></i></p>
         <br><br><br><br>
         <h2>
             hi, hello! welcome... 🌸
@@ -25,7 +30,8 @@
             <b><a href="https://laylasaunders.co.uk">laylasaunders.co.uk</a></b>!<br><br>
             this website is NOT a portfolio, its my little corner of the internet that i fill with all the things im doing 
             and everything i like!<br><br>
-            <i>last updated: 6th march 2026 - <b>still niche</b></i>
+            <i><b>"lily turn me into the thing"</b><br>
+            -average harry, 2025</i><br><br>
         </p>
         <h2>
             now that thats out the way...
@@ -33,14 +39,24 @@
         <p>
             hi chat! im layla! i make websites no one asked for 😭 most of my sites never see the light of day but anything with 
 			a url is on <a href="https://laylasaunders.co.uk">laylasaunders.co.uk</a>!<br><br>
+
 			i also do photography sometimes! some of my favourites are on <a href="https://photography.layla.lol">photography.layla.lol</a>
 			although these will likely be old as anyone who knows me knows i am notoriously slow at sending people the photos i 
 			say i will and this includes updating my site! (i need to get better at this its a genuine problem i fear)<br><br>
+
 			as of march 2026 i am working at victoria forms in bury st edmunds as a graduate IT technician! i cant prove it but 
 			i know they chose me because of my <a href="https://linkedin.com/in/laylasaunders">500+ connections on linkedin</a>!! 
             during my lunch break you can find me enjoying the nature at the abbey gardens <3<br><br>
-			im not sure what else to put here lmao i guess if you want to know more about me you should like text me back or something 
-            idk just a suggestion 😭😭😭 <a href="imessage.html">+44 7410 583791 on imessage btw guys!!!!! just saying...</a><br><br>
+
+            i have been to 5 different countries! the uk ofc i was like born there and america! i went there in 2023 to stay with my 
+            cousin who lives there !! and portugal where i went as part of the turing scheme at college in 2024, and most recently 
+            berlin in 2026 with harvey and during our berlin visit we decided to pop by poland to go see lidl so thats my 5th! my goal 
+            is 6 or 7 by 2067! xx
+
+			im not sure what else to put here if you couldnt tell lmao i guess if you want to know more about me you should like 
+            text me back or something idk just a suggestion 😭😭😭 <a href="imessage.html">+44 7410 583791 on imessage btw guys!!!!! 
+            just saying...</a><br><br>
+
 			anyways ill let you get on with reading the rest of the site, theres not much left you scrolled past the main bit!! but if you 
             want to know what music / podcasts im listening to or what youtubers im watching keep scrolling i guess i cant stop you...<br>
 			oh and my links are there too ig but you should already know the main two if you read this bit!!!!
@@ -517,4 +533,15 @@
         thanks for stopping by, and keep ts niche <3
     </main>
 </body>
+<script>
+fetch("https://counter.silly-7f7.workers.dev/increment/site1")
+    .then(res => res.json())
+    .then(data => {
+    document.getElementById("counter").textContent = data.count;
+    })
+    .catch(err => {
+    console.error(err);
+    document.getElementById("counter").textContent = "—";
+    });
+</script>
 </html>
